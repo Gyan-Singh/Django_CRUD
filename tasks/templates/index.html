@@ -54,14 +54,15 @@
           </div>
         <div class="home-buttons"></div>
         </section>
+
+        <a href="{% url 'tasks:home' %}">
+        <button class="home-view button" type="button">Get started</button>
+        </a>
         <img
           alt="image"
           src="{% static 'public/hero-divider-800h.png' %}"
           class="home-divider-image"
         />
-        <a href="{% url 'tasks:home' %}">
-          <button class="home-view button" type="button">Get started</button>
-        </a>
         <div>
           <dangerous-html
             html="<script>

@@ -37,33 +37,7 @@
     <!-- <style> ... </style> -->
     <link rel="stylesheet" href="{% static 'style.css' %}" />
   </head>
-  <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="False" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      {% if user.is_authenticated %}
-      
-      <li class="nav-item">
-        <a class="nav-link" href="/logout">Logout</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Welcome, {{user.username}}</a>
-      </li>
-
-      {% else %}
-
-      <li class="nav-item">
-        <a class="nav-link" href="/login">Login</a>
-      </li>
-
-      {% endif %}
-    </ul>
-  </div>
-</nav>
+ 
   <body>
     <div>
       <link href="{% static 'page1.css' %}" rel="stylesheet" />
@@ -83,9 +57,8 @@
                 <div class="page1-content">
                   <h2 class="page1-header">Add a driver details</h2>
                   <p class="page1-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliquat enim ad minim veniam, quis nostrud exercit
+
+                    Click to access your driver management dashboard and add your drivers.
                 </div>
               {% if user.is_authenticated %}
                 <a href="/portal">
@@ -124,10 +97,7 @@
                 <div class="page1-content1">
                   <h2 class="page1-header1">update details of driver</h2>
                   <p class="page1-description1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliquat enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi
+                    Click to effortlessly Update Your Personal Details: Access the User Dashboard and Keep Your Information Current
                   </p>
                 </div>
                 <a href='/update'>
@@ -156,12 +126,10 @@
                 <h2 class="page1-header2">Delete details of driver</h2>
                 <p class="page1-description2">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliquat enim ad minim veniam, quis nostrud
+                    Click now to begin the seamless process of closing your account.
                   </span>
                   <span></span>
-                  <span>exercitation ullamco laboris nisi</span>
+
                 </p>
               </div>
               <a href='/delete'>
